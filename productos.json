@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "foto": "./img/posters/violet.jpg",
+    "nombre": "Aesthetic",
+    "precio": 600
+},
+{
+    "id": 2,
+    "foto": "./img/posters/violet1.jpg",
+    "nombre": "Aesthetic",
+    "precio": 500
+},
+{
+    "id": 3,
+    "foto": "./img/posters/comic.jpg",
+    "nombre": "Comic",
+    "precio": 600
+},
+{
+    "id": 4,
+    "foto": "./img/posters/musica.jpg",
+    "nombre": "Música",
+    "precio": 650
+},
+{
+    "id": 5,
+    "foto": "./img/posters/musica1.jpg",
+    "nombre": "Música",
+    "precio": 550
+},
+{
+    "id": 6,
+    "foto": "./img/posters/musica2.jpg",
+    "nombre": "Música",
+    "precio": 500
+}
+]

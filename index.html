@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<!-- CSS only -->
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+		crossorigin="anonymous"
+	/>
+	<title>Under Poster</title>
+</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="./img/logo_Mesa de trabajo 1.png" style="width: 300px" alt="" /></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-light navbar-toggler-icon" style="background-color: rgb(202, 150, 150)"></span>
+				</button>
+				<!--items nav-->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" style="color: white" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" style="color: white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos </a>
+							<ul class="dropdown-menu" style="background-color: black" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" style="color: white" href="posters.html">Posters</a></li>
+								<li><a class="dropdown-item" style="color: white" href="#">Ilustraciones</a></li>
+								<li><hr class="dropdown-divider" style="background-color: white" /></li>
+								<li><a class="dropdown-item" style="color: white" href="#">Promos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="color: white" href="./contacto.html">Contacto</a>
+						</li>
+					</ul>
+					<!--buscador-->
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+						<button class="btn btn-dark" id="botonBuscar" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="fotoPrincipal">
+			<div class="item">
+				<img src="./img/CYBER TECH.jpg" style="object-fit: cover" width="100%" height="650px" alt="" class="imgPrincipal" />
+			</div>
+		</div>
+
+		<div class="container" style="max-width: 100%; background-color: black; color: white; padding: 50px">
+			<div class="row">
+				<div class="col order-last text-center barrita">
+					<img class="featureIcon" src="./img/envelope-solid-01.png" alt="" /> <br />
+					<span class="featureTitle">CONTACTANOS</span> <br />
+					<span class="featureDesc">Envianos un mail.</span>
+				</div>
+				<div class="col text-center barrita">
+					<img class="featureIcon" src="./img/gift-solid-01.png" alt="" /> <br />
+					<span class="featureTitle">GIFT CARDS</span> <br />
+					<span class="featureDesc">Contamos con gift cards y cupones.</span>
+				</div>
+				<div class="col text-center barrita">
+					<img src="./img/truck-solid-01.png" style="width: 50px; height: 50px" /><br />
+					<span class="featureTitle">ENVÍOS</span> <br />
+					<span class="featureDesc">Tenemos envíos a cualquier parte del país.</span>
+				</div>
+				<div class="col order-first text-center barrita">
+					<img class="featureIcon" src="./img/user-astronaut-solid-01.png" alt="" /><br />
+					<span class="featureTitle">DISEÑOS</span><br />
+					<span class="featureDesc">Los diseños son limitados.</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="--bs-gutter-x: 0">
+			<div class="col-md-6 text-center imgContainer">
+				<img src="./img/postersss.jpg" alt="" style="object-fit: contain" class="productoImg" />
+			</div>
+			<div class="col-md-6 productoContainer" style="width: 50%; margin: 0; padding: 0">
+				<div class="productoDetalles">
+					<h1 class="productoTitulo">POSTERS</h1>
+					<h2 class="productpPrecio">$500</h2>
+					<p class="productoDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+					<div class="sizes">
+						<div class="size">A2</div>
+						<div class="size">A3</div>
+						<div class="size">A4</div>
+					</div>
+					<a href="./posters.html"></i><button class="btn btn-dark" id="botonComprar1">COMPRAR</button></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="--bs-gutter-x: 0">
+			<div class="col-md-6 productoContainer" style="width: 50%; margin: 0; padding: 0">
+				<div class="productoDetalles2">
+					<h1 class="productoTitulo">ILUSTRACIONES</h1>
+					<h2 class="productpPrecio">$400</h2>
+					<p class="productoDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+					<div class="sizes">
+						<div class="size">A3</div>
+						<div class="size">A4</div>
+					</div>
+					<button class="btn btn-dark" id="botonComprar2">COMPRAR</button>
+				</div>
+			</div>
+			<div class="col-md-6 text-center imgContainer">
+				<img src="./img/Sin título-1-11.jpg" alt="" style="object-fit: contain" class="productoImg" />
+			</div>
+		</div>
+
+		<footer class="bg-dark text-center text-white">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0 bg-dark">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<!-- Instagram -->
+					<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/under.poster/" role="button"><i class="fab fa-instagram"></i></a>
+					<!-- Facebook -->
+					<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+					<!-- Twitter -->
+					<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+					<!-- Google -->
+					<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+				</section>
+				<!-- Section: Social media -->
+			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgb(19, 18, 18)">
+				© 2022 Copyright:
+				<a class="text-white" href="#">Under Poster</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"
+	></script>
+	<script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>
+	<!--Libretía sweet alert-->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</body>
+</html>

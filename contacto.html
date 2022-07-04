@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS only -->
+	<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"/>
+    <title>Under Poster</title>
+</head>
+<body class="form">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo_Mesa de trabajo 1.png" style="width: 300px" alt="" /></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-light navbar-toggler-icon" style="background-color: rgb(202, 150, 150)"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos </a>
+                        <ul class="dropdown-menu" style="background-color: black" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" style="color: white" href="./posters.html">Posters</a></li>
+                            <li><a class="dropdown-item" style="color: white" href="#">Ilustraciones</a></li>
+                            <li><hr class="dropdown-divider" style="background-color: white" /></li>
+                            <li><a class="dropdown-item" style="color: white" href="#">Promos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-dark" id="botonBuscar" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Formulario-->
+    <div class="row contac" style="--bs-gutter-x: 0; background-image: url(./img/rayos.jpg); object-fit: cover; height: 80vh;">
+        <div class="col-6 contacto formulario" style="padding-left: 30px; padding-right: 30px; height: 50vh;;">
+            <form id="form" action="">
+            <h2 class="text-center">Contactanos</h2>
+
+            <!--Nombre-->
+            <div class="formularioGrupo" id="grupoNombre">
+                <label for="nombre" class="formularioLabel">Ingresa tu nombre</label>
+                <div class="formularioGrupoInput">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control my-3 formularioInput">
+                    <i class="formularioValidacionEstado fas fa-times-circle"></i>
+                </div>
+                <p class="formularioInputError">El nombre solo puede contener letras.</p>
+            </div>
+
+            <!--Correo-->
+            <!--arreglando labels y divs con sus clases mirar html ejemplo-->
+            <div class="formularioGrupo" id="grupoCorreo">
+                <label for="correo" class="formularioLabel">Ingresa tu email</label>
+                <div class="formularioGrupoInput">
+                    <input type="email" class="form-control my-3 formularioInput" name="email" placeholder="ejemplo@gmail.com" aria-label="Email" aria-describedby="addon-wrapping">
+                    <i class="formularioValidacionEstado fas fa-times-circle"></i>
+                </div>
+                <p class="formularioInputError">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+            </div>
+
+            <!--Mensaje-->
+            <div class="form">
+                <label for="mensaje" class="formularioLabel">Ingresa tu consulta</label>
+                <input name="mensaje" class="form-control my-3" placeholder="Mensaje" id="floatingTextarea"></input>
+            </div>
+
+            <!--Boton enviar-->
+            <div class="formularioMensaje text-center" id="formularioMensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+            <div class="text-center formularioGrupo formularioGrupoBtnEnviar">
+                <button class="btn btn-dark btn-outline-light" style="margin-top: 15px;" type="submit">Enviar</button>
+                <p class="formularioMensajeExito" id="formularioMensajeExito">Formulario enviado exitosamente!</p>
+            </div>
+
+            </form>
+        </div>
+
+        <!--Mapa-->
+        <div class="col-6 text-center mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.197104232536!2d-68.84423038511014!3d-32.89295657650183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0910a2e57cbb%3A0xecee7dac7452e994!2sPlaza%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1656541169405!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 bg-dark">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/under.poster/" role="button"><i class="fab fa-instagram"></i></a>
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgb(19, 18, 18)">
+            © 2022 Copyright:
+            <a class="text-white" href="#">Under Poster</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"
+></script>
+<script src="./contacto.js"></script>
+<script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>    
+</body>
+</html>
